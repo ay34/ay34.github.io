@@ -1,0 +1,1 @@
+# bina guclendirme bilgi sayfası
