@@ -1,22 +1,9 @@
 const gulp = require('gulp')
-const browserSync = require('browser-sync').create()
 const sass = require('gulp-sass')
 const prefix = require('gulp-autoprefixer')
 const plumber = require('gulp-plumber')
 const pug = require('gulp-pug')
-const reload = browserSync.reload
 
-gulp.task('browser-sync', function () {
-  browserSync.init({
-    notify: false,
-    server: {
-      baseDir: './'
-    }
-  })
-  gulp.watch('./views/**/*.pug', ['html'])
-  gulp.watch('./scss/**/*.scss', ['css'])
-  gulp.watch('./js/**/*.js', reload)
-})
 
 gulp.task('css', () => {
   return gulp.src('./scss/main.scss')
@@ -34,4 +21,4 @@ gulp.task('html', () => {
   .on('end', reload)
 })
 
-gulp.task('default', ['browser-sync', 'html', 'css'])
+gulp.task('default', ['html', 'css'])
