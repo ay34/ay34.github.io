@@ -16,3 +16,6 @@
 .teklif{
   margin-left: 1em;
 }
+.Header-logo{
+  display: flex;
+}
