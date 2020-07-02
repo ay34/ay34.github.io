@@ -1,11 +1,10 @@
-.container{
-  padding: 30px;
-  background-color: red;
-}
-
 .Header{
   font-size: 1.5em;
   color: white;
+}
+
+.Header-menu{
+  text-align: center;
 }
 
 .Header-menu-user{
@@ -18,4 +17,9 @@
 }
 .Header-logo{
   display: flex;
+}
+
+.container{
+  padding: 30px;
+  background-color: red;
 }
