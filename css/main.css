@@ -1584,19 +1584,19 @@ header a {
  * ------------------------------------------------------------------- */
 header .logo {
 	position: absolute;
-	left: 35px;
-	top: 6px;
+	left: 20px;
+	top: -50px;
 	z-index: 601;
 }
 
 header .logo a {
 	display: block;
-	margin: 0;
+	margin-bottom: 100px;
 	padding: 0;
 	outline: 0;
 	border: none;
-	width: 250px;
-	height: 100px;
+	width: 300px;
+	height: 200px;
 	background: url("../images/logo.png") no-repeat center/cover;
 	background-size: contain;
 	font: 0/0 a;
